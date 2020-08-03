@@ -1,6 +1,9 @@
-class Cat:
-    def __init__(self, name:str):
-        self.name = name
+from sda_ex_oop_1_mz.animal import Animal
+
+
+class Cat(Animal):
+    def __init__(self, name: str):
+        super().__init__(name)
         self.eat = 0
 
     def make_sound(self) -> str:
