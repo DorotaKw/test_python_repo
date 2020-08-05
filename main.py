@@ -31,9 +31,8 @@ def animal_creator(animals: list):
     animals.append(dog1)
     animals.append(dog2)
 
+
 def main():
-    # cat = Cat("Mruczek")
-    # print(cat.make_sound())
     dogs = dog_creator()
     for dog in dogs:
         print(dog.make_sound())
@@ -45,6 +44,7 @@ def main():
     animal_creator(animals)
     for animal in animals:
         print(animal.make_sound())
+    cat.move()
 
 
 if __name__ == "__main__":
