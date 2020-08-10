@@ -1,11 +1,11 @@
 from datetime import date
 
-from sda_exercises_oop_2_mz.person import Person
+from sda_ex_oop_2_mz.person import Person
 
 
 class Employee(Person):
 
-    def __init__(self, name: str, surname: str, birthday: date, salary=1000.0):
+    def __init__(self, name, surname, birthday: date, salary):
         birthday = self.check_date(birthday)
         super().__init__(name, surname, birthday)
         self._salary = salary
@@ -15,7 +15,7 @@ class Employee(Person):
         return self._birthday
 
     @birthday.setter
-    def birthday(self, value: date):
+    def birthday(self, value):
         value = self.check_date(value)
         self._birthday = value
 
@@ -24,7 +24,7 @@ class Employee(Person):
         return self._salary
 
     @salary.setter
-    def salary(self, value: float):
+    def salary(self, value):
         self._salary = value
 
     @staticmethod

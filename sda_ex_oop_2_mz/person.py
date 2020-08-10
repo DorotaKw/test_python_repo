@@ -14,7 +14,7 @@ class Person:
         return self._name
 
     @name.setter
-    def name(self, value: str):
+    def name(self, value):
         self._name = value
 
     @property
@@ -22,7 +22,7 @@ class Person:
         return self._surname
 
     @surname.setter
-    def surname(self, value: str):
+    def surname(self, value):
         self._surname = value
 
     @property
@@ -30,6 +30,6 @@ class Person:
         return self._birthday
 
     @birthday.setter
-    def birthday(self, value: date):
+    def birthday(self, value):
         self._birthday = value
 
