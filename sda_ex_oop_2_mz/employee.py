@@ -5,16 +5,10 @@ from sda_ex_oop_2_mz.person import Person
 
 class Employee(Person):
 
-    def __init__(self, name, surname, birthday: date, salary=1000.0):
+    def __init__(self, name, surname, birthday: date, salary):
         birthday = self.check_date(birthday)
         super().__init__(name, surname, birthday)
         self.salary = salary
-
-    def main(self):
-        # tworzymy obiekt klasy employee
-        Jan = Employee("Jan", "Nowak")
-
-        Jan.who_am_i()
 
     @property
     def birthday(self):
@@ -49,4 +43,6 @@ class Employee(Person):
 
     def who_am_i(self):
         print(f"Nazywam się {self._name} {self._surname} i zarabiam {self.salary} zł")
+
+
 
