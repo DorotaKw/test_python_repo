@@ -1,7 +1,5 @@
 from datetime import date
 
-from IPython.utils.coloransi import value
-
 from sda_ex_oop_2_mz.employee import Employee
 
 
@@ -16,7 +14,7 @@ class Manager(Employee):
         return self.salary
 
     @salary.setter
-    def salary(self):
+    def salary(self, value: float):
         self.salary = value * 1.1
 
     def who_am_i(self):

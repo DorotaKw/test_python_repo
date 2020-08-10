@@ -1,14 +1,14 @@
 from datetime import date
 
-from sda_ex_oop_2_mz.person import Person
+from sda_exercises_oop_2_mz.person import Person
 
 
 class Employee(Person):
 
-    def __init__(self, name, surname, birthday: date, salary):
+    def __init__(self, name: str, surname: str, birthday: date, salary=1000.0):
         birthday = self.check_date(birthday)
         super().__init__(name, surname, birthday)
-        self.salary = salary
+        self._salary = salary
 
     @property
     def birthday(self):
@@ -21,11 +21,11 @@ class Employee(Person):
 
     @property
     def salary(self):
-        return self.salary
+        return self._salary
 
     @salary.setter
     def salary(self, value: float):
-        self.salary = value
+        self._salary = value
 
     @staticmethod
     def check_date(value: date) -> date:
@@ -34,15 +34,18 @@ class Employee(Person):
             value = date(0, 0, 0)
         return value
 
-    #@staticmethod
-    #def check_birthday(value: int) -> int:
-       # if value < 1900 | value > 2020:
-        #    return 0
-       # else:
-          #  return value
+    # @staticmethod
+    # def check_birthday(value: int) -> int:
+    # if value < 1900 | value > 2020:
+    #    return 0
+    # else:
+    #  return value
 
     def who_am_i(self):
-        print(f"Nazywam się {self._name} {self._surname} i zarabiam {self.salary} zł")
+        print(f'Nazywam sie {self.name} {self.surname} i zarabiam {self.salary} zł')
+
+
+
 
 
 
