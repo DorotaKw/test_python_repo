@@ -4,10 +4,11 @@ from datetime import date
 
 class Person:
 
-    def __init__(self, name, surname, birthday: date):
+    def __init__(self, name, surname, birthday: date, sex):
         self._name = name
         self._surname = surname
         self._birthday = birthday
+        self._sex = sex
 
     @property
     def name(self):
@@ -32,4 +33,12 @@ class Person:
     @birthday.setter
     def birthday(self, value):
         self._birthday = value
+
+    @property
+    def sex(self):
+        return self._sex
+
+    @sex.setter
+    def sex(self, value):
+        self._sex = value
 
