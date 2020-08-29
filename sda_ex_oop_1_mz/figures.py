@@ -4,7 +4,7 @@ from sda_ex_oop_1_mz.figure import Figure
 
 
 class Rectangle(Figure):
-    def __init__(self, a, b):
+    def __init__(self, a: float, b: float):
         self.a = a
         self.b = b
 
