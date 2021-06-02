@@ -26,7 +26,7 @@ six==1.15.0
 tqdm==4.48.0
 traitlets==4.3.3
 twine==2.0.0
-urllib3==1.24.3
+urllib3==1.26.5
 virtualenv==20.0.25
 wcwidth==0.2.5
 webencodings==0.5.1
