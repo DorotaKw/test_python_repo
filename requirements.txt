@@ -9,7 +9,7 @@ distlib==0.3.0
 docutils==0.16
 filelock==3.0.12
 idna==2.8
-ipython==7.6.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 jedi==0.15.1
 packaging==20.4
